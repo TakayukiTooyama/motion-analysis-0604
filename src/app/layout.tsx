@@ -1,29 +1,26 @@
 import '@/style/global.css';
 
-import type { Metadata, NextPage } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next x Tailwind Sterter',
-    template: '%s | Next x Tailwind Sterter',
+    default: 'Motion Analysis System',
+    template: '%s | Motion Analysis System',
   },
-  description: 'Next.js13 x TailwindCSS テンプレート',
+  description:
+    'オープンキャンパス用の動作分析アプリ。バットスイングや立ち幅跳びの速度や角度, スティックピクチャーをグラフで表示させることができる。',
   icons: {
     icon: '/favicon.ico',
   },
 };
 
-type RootLayoutProps = {
-  children: React.ReactNode;
-};
-
-const RootLayout: NextPage<RootLayoutProps> = ({ children }) => {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='ja'>
       <head />
       <body>{children}</body>
     </html>
   );
-};
+}
 
 export default RootLayout;

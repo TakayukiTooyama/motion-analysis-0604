@@ -26,7 +26,7 @@ module.exports = {
     ],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
-    'func-style': ['error', 'expression'],
+    'func-style': ['error', 'declaration'],
     'arrow-body-style': ['error', 'always'],
     'no-restricted-imports': [
       'error',
@@ -45,10 +45,10 @@ module.exports = {
       },
     ],
     'react/destructuring-assignment': ['error', 'always'],
-    'react/function-component-definition': [
-      2,
-      { namedComponents: 'arrow-function' },
-    ],
+    // 'react/function-component-definition': [
+    //   2,
+    //   { namedComponents: 'arrow-function' },
+    // ],
 
     // sort
     'import/no-default-export': 'error',
